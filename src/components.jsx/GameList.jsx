@@ -4,7 +4,7 @@ import "../css/GameList.css";
 const GameList = ({ games }) => {
   return (
     <div>
-      <h1 className="title-list">Game List</h1>
+      <h2 className="title-list">Game List</h2>
       <ul className="game-list">
         {games.map((game) => (
           <li className="game-list-item" key={game.id}>

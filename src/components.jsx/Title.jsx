@@ -1,3 +1,5 @@
+import "../css/Title.css";
+
 function Title() {
   return (
     <div className="title title-company">
