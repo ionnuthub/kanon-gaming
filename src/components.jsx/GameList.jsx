@@ -1,4 +1,5 @@
 import propTypes from "prop-types";
+import "../css/GameList.css";
 
 const GameList = ({ games }) => {
   return (
