@@ -1,0 +1,23 @@
+import propTypes from "prop-types";
+
+const GameList = ({ games }) => {
+  return (
+    <div>
+      <h1 className="title-list">Game List</h1>
+      <ul className="game-list">
+        {games.map((game) => (
+          <li className="game-list-item" key={game.id}>
+            <strong>{game.title}</strong> ({game.providerName})
+            <br />
+            <img src={game.thumb?.url} alt={game.title} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+// Using the propTypes
+GameList.propTypes = {
+  games: propTypes.array,
+};
+export default GameList;

@@ -1,4 +1,4 @@
-import GameList from "./components/GameList";
+import GameList from "./components.jsx/GameList";
 import games from "./game-data.json";
 
 function App() {
