@@ -19,6 +19,6 @@ const GameList = ({ games }) => {
 };
 // Using the propTypes
 GameList.propTypes = {
-  games: propTypes.array,
+  games: propTypes.array.isRequired,
 };
 export default GameList;
