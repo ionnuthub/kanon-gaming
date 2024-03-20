@@ -1,4 +1,4 @@
-import GameList from "./components.jsx/GameList";
+import GameList from "./features/games/GameList";
 import games from "./game-data.json";
 import Title from "./components.jsx/Title";
 
@@ -7,8 +7,7 @@ function App() {
     <>
       <nav></nav>
       <header>
-        {" "}
-        <Title />{" "}
+        <Title />
       </header>
       <main>
         <div className="app">

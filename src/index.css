@@ -1,17 +1,4 @@
-.game-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.game-list-item {
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  margin-bottom: 5px;
-  padding: 10px;
-  font-family: "Arial", sans-serif;
-}
-
-.game-list-item:hover {
-  background-color: #eaeaea;
-}
