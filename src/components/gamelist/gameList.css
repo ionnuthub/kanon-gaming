@@ -1,0 +1,54 @@
+/* Animation */
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+  30% {
+    color: yellow;
+  }
+}
+
+/* Title List */
+.title-games-list {
+  text-align: center;
+  height: auto;
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  animation: colorChange 2s infinite;
+}
+
+/* Game List */
+.game-card {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .game-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Images of the games pop up */
+
+.game-list-card img {
+  transition: transform 0.5s; /* Add a transition effect on hover */
+  width: 100%;
+  height: auto;
+}
+.game-list-card img:hover {
+  transform: scale(1.1); /* Increase the scale to make the image pop up */
+}
