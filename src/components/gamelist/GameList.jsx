@@ -28,10 +28,16 @@ function GameList() {
         <Row>
           <Col>
             <input
-              style={{ padding: "10px", margin: "10px 0", width: "20%" }}
+              style={{
+                position: "relative",
+                left: "1%",
+                padding: "10px",
+                margin: "10px 0",
+                width: "25%",
+              }}
               type="text"
               className="form-control"
-              placeholder="Search Games...🔍"
+              placeholder="Search...🔍"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
