@@ -1,0 +1,75 @@
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Reels container */
+.reels {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Individual reel style */
+.reel {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Button style */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Disable button when spinning */
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Win/Loss text styles */
+.text-win,
+.text-lost {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.text-win {
+  color: #28a745; /* Green for wins */
+}
+
+.text-lost {
+  color: #dc3545; /* Red for losses */
+}
