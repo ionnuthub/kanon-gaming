@@ -23,10 +23,11 @@ function SlotMachine() {
       return;
     }
 
+    // Calculate the win coins based on the spin result
     const winCoins = checkWin(spinResult[0], spinResult[1], spinResult[2]);
 
     if (coins > 0) {
-      setIsSpinning(true); //Start spinning
+      setIsSpinning(true); //Start spinnings
       setCoins((prevCoins) => prevCoins - 1 + winCoins);
       setSpinResult([spinReel(), spinReel(), spinReel()]);
     }
@@ -99,7 +100,7 @@ function SlotMachine() {
         ) : (
           <div className="text-lost">
             {" "}
-            <p>You lost 1 coin</p>
+            <p>You spin with 1 coin</p>
           </div>
         )}
       </div>
