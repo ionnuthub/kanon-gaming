@@ -3,7 +3,6 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 
 import "./slotMachine.css";
-import { Container } from "react-bootstrap";
 
 const fruits = ["cherry", "apple", "banana", "lemon"];
 
@@ -12,7 +11,7 @@ function SlotMachine() {
   const [isSpinning, setIsSpinning] = useState(false);
   const [spinResult, setSpinResult] = useState(["", "", ""]);
 
-  //Randomly selects a fruit from fruits array
+  //Randomly select a fruit from fruits array
   function spinReel() {
     return fruits[Math.floor(Math.random() * fruits.length)];
   }
@@ -24,14 +23,17 @@ function SlotMachine() {
       return;
     }
 
+    const winCoins = checkWin(spinResult[0], spinResult[1], spinResult[2]);
+
     if (coins > 0) {
       setIsSpinning(true); //Start spinning
-      setCoins((prevCoins) => prevCoins - 1);
+      setCoins((prevCoins) => prevCoins - 1 + winCoins);
       setSpinResult([spinReel(), spinReel(), spinReel()]);
     }
 
+    //Stop spinning
     setTimeout(() => {
-      setIsSpinning(false); //Stop spinning
+      setIsSpinning(false);
     }, 1000);
   }
 
@@ -82,7 +84,7 @@ function SlotMachine() {
         disabled={isSpinning}
         variant="outline-primary"
       >
-        Spin ({isSpinning ? "spinning..." : "1 Coin"})
+        Spin ({isSpinning ? "Spinning..." : "1 Coin"})
       </Button>{" "}
       <div className="result">
         {checkWin(spinResult[0], spinResult[1], spinResult[2]) > 0 ? (

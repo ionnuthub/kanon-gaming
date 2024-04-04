@@ -4,8 +4,7 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import PropTypes from "prop-types";
 
-import "./fruitImage.css";
-
+// Select the fruit image based on prop
 function FruitImage({ fruit }) {
   return (
     <div className="fruit-image">
