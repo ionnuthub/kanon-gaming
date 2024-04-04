@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavLink } from "react-bootstrap";
 
 import "./gameList.css";
 import games from "../../../game-data.json";

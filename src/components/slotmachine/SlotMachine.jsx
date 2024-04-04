@@ -13,7 +13,8 @@ function SlotMachine() {
 
   //Randomly select a fruit from fruits array
   function spinReel() {
-    return fruits[Math.floor(Math.random() * fruits.length)];
+    const randomFruit = Math.floor(Math.random() * fruits.length);
+    return fruits[randomFruit];
   }
 
   //Handle the click event of the spin button

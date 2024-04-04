@@ -12,6 +12,7 @@ import "./reel.css";
 function Reel({ spinReel, isSpinning }) {
   const [fruit, setFruit] = useState("");
 
+  // Set up interval to call spinReel function
   useEffect(() => {
     if (isSpinning) {
       const intervalId = setInterval(() => {
