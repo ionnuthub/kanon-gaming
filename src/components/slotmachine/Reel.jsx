@@ -47,3 +47,5 @@ Reel.propTypes = {
   spinReel: PropTypes.func.isRequired,
   isSpinning: PropTypes.bool.isRequired,
 };
+
+////////////////////////////////////////////////////////////////

@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="App">
+        <div className="container-fluid">
           <NavBar />
           <Routes>
             <Route path="/gamelist" element={<GameList />}></Route>

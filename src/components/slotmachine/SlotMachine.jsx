@@ -11,7 +11,7 @@ function SlotMachine() {
   const [isSpinning, setIsSpinning] = useState(false);
   const [spinResult, setSpinResult] = useState(["", "", ""]);
 
-  //Randomly select a fruit from fruits array
+  // select a fruit from fruits array
   function spinReel() {
     const randomFruit = Math.floor(Math.random() * fruits.length);
     return fruits[randomFruit];
@@ -56,7 +56,7 @@ function SlotMachine() {
       }
     }
 
-    //Check for two fruits match
+    //Check for 2 fruits
     if (fruit1 === fruit2 && fruit1 !== "lemon") {
       switch (fruit1) {
         case "cherry":
@@ -91,12 +91,12 @@ function SlotMachine() {
       <div className="result">
         {checkWin(spinResult[0], spinResult[1], spinResult[2]) > 0 ? (
           <div className="text-win">
-            <p>
+            <h3>
               <strong>
                 You won {checkWin(spinResult[0], spinResult[1], spinResult[2])}
                 coins!
               </strong>
-            </p>
+            </h3>
           </div>
         ) : (
           <div className="text-lost">
