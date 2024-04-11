@@ -1,3 +1,13 @@
+# Overview
+
+This repository contains the frontend code using React and Bootstrap for displayng a List of Games and a small web application Slot machine game
+
+# Features
+
+Games List: Display a list of games
+Search Functionality: Search for games by name.
+Slot Machine: Access a slot machine game with a chance to win coins.
+
 # React + Vite
 
 In terminal: npm run dev
