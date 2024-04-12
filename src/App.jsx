@@ -13,7 +13,7 @@ function App() {
         <div className="container-fluid">
           <NavBar />
           <Routes>
-            <Route path="/gamelist" element={<GameList />}></Route>
+            <Route path="/" element={<GameList />}></Route>
             <Route path="/slotmachine" element={<SlotMachine />}></Route>
           </Routes>
         </div>
