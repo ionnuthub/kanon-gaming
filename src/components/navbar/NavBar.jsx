@@ -10,7 +10,7 @@ function NavBar() {
         <Nav className="me-auto">
           {/* <Nav.Link href="#home">Home</Nav.Link> */}
           <Nav.Link href="/">Games List</Nav.Link>
-          <Nav.Link href="./slot-machine">Slot Machine</Nav.Link>
+          <Nav.Link href="/slot-machine">Slot Machine</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
